@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.navbar{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #080808;
+    color: #fff;
+    padding: 0 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+.logo h1{
+    font-size: 20px;   
+}
+.menu-items{
+    display: flex;
+    list-style: none;
+}
+.menu-items li{
+    margin-right: 20px;
+}
+.menu-items li a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 12px;
+    color: #fff;
+    transition: 0.3s ease;
+}
+.menu-items li a:hover{
+    background-color: #2b2b2b;
+    border-radius: 5px;
+}
+.menu-icon{
+    font-size: 30px;
+    display: none;
+}
+input{
+    display: none;
+}
+.CV{
+    border: 2px solid white;
+    border-radius: 5px;
+}
+@media screen and (max-width:768px){
+    .navbar{
+        padding: 0px 40px;
+    }
+    .menu-items{
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #080808;
+        padding: 20px 35px;
+        display: none;
+    }
+    .menu-items li{
+        padding: 15px 0px;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    input{
+        display: none;
+    }
+    input:checked ~ .menu-items{
+        display: flex;
+    }
+}
+
+.home{
+    background-color: black;
+    color: white;
+}
+.image{
+    background-image: url('profilepic.png');
+    height: 65vh;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 95%;
+    margin-top: 150px;
+}
+
+.about{
+    position: relative;
+    top: 5%;
+    z-index: 1;
+    margin-left: 50px;
+}
+.about p{
+    margin-top: 100px;
+    width: 40%;
+    display: flex;
+    font-size: 25px;
+}
+@media(max-width:400px){
+    .aboutMe{
+        font-size: 15px;
+    }
+}
+main h1{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+.skills{
+    text-align: center;
+}
+.skills h2{
+    margin:5% 0 2% 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    padding: 50px;
+}
+.skill-box{
+    padding: 16px;  
+}
+.skill-box p{
+    max-width: 150px;
+}
+img{
+    max-width: 150px; 
+    max-height: 150px;
+}
+.skill-title{
+    margin-bottom: 8px;
+}
+
+
+
+
+
+.projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project{
+    width: 350px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+    cursor:default;
+}
+.project h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.project p{
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+.project a{
+    font-size: 17px;
+    color: white;
+}
+
+.contact{
+    margin-top: 50px;
+    border: 3px solid white;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 5%;
+    font-size: 18px;
+}
+.mail{
+    text-decoration: none;
+    color: white;
+}
+ul li p{
+    font-size: 10px;
+    text-align: center;
+}

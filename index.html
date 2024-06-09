@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Karol Sojka</h1>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu-items">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="Karol_Sojka_en_CV.pdf" class="CV">DownloadCV</a></li>
+            </ul>
+        </nav>
+        <div class="image">
+            <div class="about" id="about">
+                <h1>About Me:</h1>
+                <p class="aboutMe">
+                    Hi, my name is Karol Sojka and I have started to learn Web Development.
+                    I am currently on maternity leave and all the free time I can get I spend
+                    learning.
+                </p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="skills">
+            <h1 id="skills">Skills</h1>
+                <h2>Programming skills</h2>
+                    <div class="container">
+                        <div class="skill-box">
+                            <div class="skill-title">
+                                <div class="img">
+                                    <img src="html5.png" alt="html5 icon">
+                                </div>
+                                <h3>HTML5</h3>
+                            </div>
+                            <p>Classes, ID's or divs and basic HTML structure and setup.</p>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-title">
+                                <div class="img">
+                                    <img src="css3.png" alt="html5 icon">
+                                </div>
+                                <h3>CSS3</h3>
+                            </div>
+                            <p>Positioning, resizing and color setup, @media and @keyframes basics</p>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-title">
+                                <div class="img">
+                                    <img src="js.png" alt="html5 icon">
+                                </div>
+                                <h3>JavaScript</h3>
+                            </div>
+                            <p>Basic functions, for loops, arrays, conditions and switches, ID or Tagname manipulation.</p>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skill-title">
+                                <div class="img">
+                                    <img src="git.png" alt="html5 icon">
+                                </div>
+                                <h3>GIT / GITHUB</h3>
+                            </div>
+                            <p>
+                                Basic setup, saving changes to repository, repository changes list.
+                                GITHUB setup and upload to create personal website.
+                            </p>
+                        </div>
+                    </div>
+                <h2>Soft skills</h2>
+                    <ul>
+                        <li>Problem-solving</li>
+                        <li>Critical Thinking</li>
+                        <li>Adaptability</li>
+                        <li>Time management</li>
+                        <li>Communication</li>
+                        <li>Team or Solowork</li>
+                        <li>Flexibility</li>
+                    </ul>
+                <h2>Language</h2>
+                    <ul>
+                        <li>English - Upper intermediate (B2)</li>
+                    </ul>
+
+        </div>
+
+        <h1 id="portfolio">Portfolio</h1>
+        <div class="projects">
+            <div class="project">
+                <h3>Hex color Generator</h3>
+                <p>
+                    This is my first beginner project in JS and some little HTML/CSS. 
+                    Button click generates random hex color and also change background
+                    color according to the hex code provided.
+                </p>
+                <a href="hexCode.html" target="_blank">Link to project</a>
+            </div>
+            <div class="project">
+                <h3>Simple Counter</h3>
+                <p>
+                    HTML/CSS/JS project. Simple counter that is manipulated through
+                    button click, increase, decrease and reset.
+                </p>
+                <a href="counter.html" target="_blank">Link to project</a>
+            </div>
+            <div class="project">
+                <h3>Calculator</h3>
+                <p>
+                    Another beginner project. Simple HTML/CSS/JS calculator. Reflexts
+                    user choices and evaluates the result.
+                </p>
+                <a href="calculator.html">Link to project</a>
+            </div>
+        </div>
+        <h1 id="contact">Contact me:</h1>
+        <ul class="contact">
+            <li>Phone: +421907231349</li>
+            <li><a href="mailto:kajko.sojka@gmail.com" class="mail">Mail: kajko.sojka@gmail.com</a>
+                <p>click to send mail</p>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
